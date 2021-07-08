@@ -3,13 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebPhoneStore", "MyWebPhoneStore\MyWebPhoneStore.csproj", "{CD502F9B-6793-445C-B353-7B06D3F32454}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{111010C2-6215-4B6B-B01E-91DD71CE2C84}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\settings.ruleset = ..\..\..\Desktop\settings.ruleset
-		..\..\..\Desktop\stylecop.json = ..\..\..\Desktop\stylecop.json
+		settings.ruleset = settings.ruleset
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{61B92F41-C4F4-4CE1-8D6B-7C49535E6800}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{7466ADC6-930D-47F2-BE3F-B488C6FD24F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E871D96B-B7FB-4F9F-AF97-E081F93A9FC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebPhoneStoreApi", "src\MyWebPhoneStoreApi\MyWebPhoneStoreApi.csproj", "{DCC332EE-B169-47DA-AD1E-5B45F1A2EB70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebPhoneStoreApi.Service", "services\MyWebPhoneStoreApi.Service\MyWebPhoneStoreApi.Service.csproj", "{266EEAD7-40AC-459C-B7B9-ADCC55D41AB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebPhoneStoreAPI.UnitTests", "tests\MyWebPhoneStoreAPI.UnitTests\MyWebPhoneStoreAPI.UnitTests.csproj", "{F8046B28-FCDF-4C49-9F23-BE690F85A09D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,13 +26,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CD502F9B-6793-445C-B353-7B06D3F32454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD502F9B-6793-445C-B353-7B06D3F32454}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD502F9B-6793-445C-B353-7B06D3F32454}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD502F9B-6793-445C-B353-7B06D3F32454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC332EE-B169-47DA-AD1E-5B45F1A2EB70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC332EE-B169-47DA-AD1E-5B45F1A2EB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC332EE-B169-47DA-AD1E-5B45F1A2EB70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC332EE-B169-47DA-AD1E-5B45F1A2EB70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266EEAD7-40AC-459C-B7B9-ADCC55D41AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266EEAD7-40AC-459C-B7B9-ADCC55D41AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266EEAD7-40AC-459C-B7B9-ADCC55D41AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266EEAD7-40AC-459C-B7B9-ADCC55D41AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8046B28-FCDF-4C49-9F23-BE690F85A09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8046B28-FCDF-4C49-9F23-BE690F85A09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8046B28-FCDF-4C49-9F23-BE690F85A09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8046B28-FCDF-4C49-9F23-BE690F85A09D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DCC332EE-B169-47DA-AD1E-5B45F1A2EB70} = {61B92F41-C4F4-4CE1-8D6B-7C49535E6800}
+		{266EEAD7-40AC-459C-B7B9-ADCC55D41AB0} = {7466ADC6-930D-47F2-BE3F-B488C6FD24F8}
+		{F8046B28-FCDF-4C49-9F23-BE690F85A09D} = {E871D96B-B7FB-4F9F-AF97-E081F93A9FC4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CEA5C55B-1031-49F0-AAAC-1B6A3C3D7EEE}

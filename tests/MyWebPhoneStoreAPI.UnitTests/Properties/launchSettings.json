@@ -4,8 +4,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:8257",
-      "sslPort": 44311
+      "applicationUrl": "http://localhost:44419",
+      "sslPort": 44366
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "MyWebPhoneStore": {
+    "MyWebPhoneStoreAPI.UnitTests": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
