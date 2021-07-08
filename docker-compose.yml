@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  bookapi.service:
+    image: bookapiservice
+    build:
+      context: ../../
+      dockerfile: Dockerfile
+    environment:
+      BookApi__ConnectionString: 'server=192.168.1.75;port=5433;database=books;uid=postgres;password=postgres;'
+    ports:
+      - 5006:80

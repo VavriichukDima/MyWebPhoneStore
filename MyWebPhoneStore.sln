@@ -5,6 +5,9 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{111010C2-6215-4B6B-B01E-91DD71CE2C84}"
 	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+		Readme = Readme
 		settings.ruleset = settings.ruleset
 	EndProjectSection
 EndProject
@@ -18,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebPhoneStoreApi", "src\M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebPhoneStoreApi.Service", "services\MyWebPhoneStoreApi.Service\MyWebPhoneStoreApi.Service.csproj", "{266EEAD7-40AC-459C-B7B9-ADCC55D41AB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebPhoneStoreAPI.UnitTests", "tests\MyWebPhoneStoreAPI.UnitTests\MyWebPhoneStoreAPI.UnitTests.csproj", "{F8046B28-FCDF-4C49-9F23-BE690F85A09D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebPhoneStoreApi.UnitTests", "tests\MyWebPhoneStoreAPI.UnitTests\MyWebPhoneStoreApi.UnitTests.csproj", "{F8046B28-FCDF-4C49-9F23-BE690F85A09D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
