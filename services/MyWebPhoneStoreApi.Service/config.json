@@ -1,0 +1,9 @@
+{
+  "MyWebPhoneStoreApi": {
+    "ConnectionString": "server=192.168.0.102;port=5433;database=MyPhoneStore;uid=postgres;password=postgres;"
+  },
+  "Redis": {
+    "Host": "192.168.0.102:6380",
+    "CacheTimeout": "00:00:10"
+  }
+}
