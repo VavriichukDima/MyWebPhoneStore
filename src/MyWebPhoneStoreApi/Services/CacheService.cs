@@ -1,13 +1,13 @@
 using System;
 using System.Threading.Tasks;
-using MyWebPhoneStoreApi.Configuration;
-using MyWebPhoneStoreApi.Data.Cache;
+using PhoneApi.Configuration;
+using PhoneApi.Data.Cache;
 using StackExchange.Redis;
-using MyWebPhoneStoreApi.Services.Abstractions;
+using PhoneApi.Services.Abstractions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace MyWebPhoneStoreApi.Services
+namespace PhoneApi.Services
 {
     public class CacheService<TCacheEntity> : ICacheService<TCacheEntity>
         where TCacheEntity : class, ICacheEntity

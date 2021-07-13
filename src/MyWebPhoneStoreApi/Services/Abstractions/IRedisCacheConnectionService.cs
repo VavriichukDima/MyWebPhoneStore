@@ -1,7 +1,7 @@
 using System;
 using StackExchange.Redis;
 
-namespace MyWebPhoneStoreApi.Services.Abstractions
+namespace PhoneApi.Services.Abstractions
 {
     public interface IRedisCacheConnectionService
     {

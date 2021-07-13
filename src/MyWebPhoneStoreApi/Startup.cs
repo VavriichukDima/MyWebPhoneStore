@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using MyWebPhoneStoreApi.Configuration;
-using MyWebPhoneStoreApi.Data;
-using MyWebPhoneStoreApi.Data.Cache;
-using MyWebPhoneStoreApi.DataProviders;
-using MyWebPhoneStoreApi.DataProviders.Abstractions;
-using MyWebPhoneStoreApi.Services;
-using MyWebPhoneStoreApi.Services.Abstractions;
+using PhoneApi.Configuration;
+using PhoneApi.Data;
+using PhoneApi.Data.Cache;
+using PhoneApi.DataProviders;
+using PhoneApi.DataProviders.Abstractions;
+using PhoneApi.Services;
+using PhoneApi.Services.Abstractions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +14,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using BookApi.DataProviders;
 
-namespace MyWebPhoneStoreApi
+namespace PhoneApi
 {
     public class Startup
     {
@@ -41,16 +40,16 @@ namespace MyWebPhoneStoreApi
             });
 
             services.AddTransient<IRedisCacheConnectionService, RedisCacheConnectionService>();
-            services.AddTransient<ICacheService<WebPhoneStoreApiCacheEntity>, CacheService<WebPhoneStoreApiCacheEntity>>();
+            services.AddTransient<ICacheService<PhoneApiCacheEntity>, CacheService<PhoneApiCacheEntity>>();
             services.AddTransient<IJsonSerializer, JsonSerializer>();
 
             services.Configure<Config>(AppConfiguration);
 
             var connectionString = AppConfiguration["MyWebPhoneStoreApi:ConnectionString"];
-            services.AddDbContext<MyWebPhoneStoreApiDbContext>(
+            services.AddDbContext<PhoneApiDbContext>(
                 opts => opts.UseNpgsql(connectionString));
 
-            services.AddTransient<IMyWebPhoneStoreProvider, MyWebPhoneStoreApiProvider>();
+            services.AddTransient<IPhoneProvider, PhoneApiProvider>();
             services.AddTransient<IPhoneService, PhoneService>();
         }
 

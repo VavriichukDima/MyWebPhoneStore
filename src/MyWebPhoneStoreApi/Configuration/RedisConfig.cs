@@ -1,6 +1,6 @@
 using System;
 
-namespace MyWebPhoneStoreApi.Configuration
+namespace PhoneApi.Configuration
 {
     public class RedisConfig
     {

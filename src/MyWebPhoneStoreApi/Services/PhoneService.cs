@@ -1,19 +1,19 @@
 using System.Threading.Tasks;
-using MyWebPhoneStoreApi.Data.Cache;
-using MyWebPhoneStoreApi.DataProviders.Abstractions;
-using MyWebPhoneStoreApi.Models;
-using MyWebPhoneStoreApi.Services.Abstractions;
+using PhoneApi.Data.Cache;
+using PhoneApi.DataProviders.Abstractions;
+using PhoneApi.Models;
+using PhoneApi.Services.Abstractions;
 
-namespace MyWebPhoneStoreApi.Services
+namespace PhoneApi.Services
 {
     public class PhoneService : IPhoneService
     {
-        private readonly IMyWebPhoneStoreProvider _phoneProvider;
-        private readonly ICacheService<WebPhoneStoreApiCacheEntity> _cacheService;
+        private readonly IPhoneProvider _phoneProvider;
+        private readonly ICacheService<PhoneApiCacheEntity> _cacheService;
 
         public PhoneService(
-            IMyWebPhoneStoreProvider phoneProvider,
-            ICacheService<WebPhoneStoreApiCacheEntity> cacheService)
+            IPhoneProvider phoneProvider,
+            ICacheService<PhoneApiCacheEntity> cacheService)
         {
             _phoneProvider = phoneProvider;
             _cacheService = cacheService;
@@ -23,7 +23,7 @@ namespace MyWebPhoneStoreApi.Services
         {
             var result = await _phoneProvider.AddAsync(name);
 
-            await _cacheService.AddOrUpdateAsync(new WebPhoneStoreApiCacheEntity() { Id = result.Id, Name = name }, "userName");
+            await _cacheService.AddOrUpdateAsync(new PhoneApiCacheEntity() { Id = result.Id, Name = name }, "userName");
 
             return new AddPhoneResponse() { Id = result.Id };
         }

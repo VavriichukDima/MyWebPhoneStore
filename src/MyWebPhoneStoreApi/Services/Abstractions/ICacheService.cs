@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
-using MyWebPhoneStoreApi.Data.Cache;
+using PhoneApi.Data.Cache;
 
-namespace MyWebPhoneStoreApi.Services.Abstractions
+namespace PhoneApi.Services.Abstractions
 {
     public interface ICacheService<TCacheEntity>
         where TCacheEntity : class, ICacheEntity

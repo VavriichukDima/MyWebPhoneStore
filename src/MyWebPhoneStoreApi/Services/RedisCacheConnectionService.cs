@@ -1,10 +1,10 @@
 using System;
-using MyWebPhoneStoreApi.Configuration;
-using MyWebPhoneStoreApi.Services.Abstractions;
+using PhoneApi.Configuration;
+using PhoneApi.Services.Abstractions;
 using Microsoft.Extensions.Options;
 using StackExchange.Redis;
 
-namespace MyWebPhoneStoreApi.Services
+namespace PhoneApi.Services
 {
     public class RedisCacheConnectionService : IRedisCacheConnectionService, IDisposable
     {

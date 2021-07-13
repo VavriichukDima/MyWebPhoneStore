@@ -1,4 +1,4 @@
-namespace MyWebPhoneStoreApi.Configuration
+namespace PhoneApi.Configuration
 {
     public class PhoneApiConfig
     {

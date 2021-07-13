@@ -1,9 +1,9 @@
 using System;
 using System.Text.Json.Serialization;
-using MyWebPhoneStoreApi.Services.Abstractions;
+using PhoneApi.Services.Abstractions;
 using Newtonsoft.Json;
 
-namespace MyWebPhoneStoreApi.Services
+namespace PhoneApi.Services
 {
     public class JsonSerializer : IJsonSerializer
     {

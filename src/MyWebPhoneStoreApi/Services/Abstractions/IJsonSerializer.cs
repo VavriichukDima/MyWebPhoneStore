@@ -1,6 +1,6 @@
 using System;
 
-namespace MyWebPhoneStoreApi.Services.Abstractions
+namespace PhoneApi.Services.Abstractions
 {
     public interface IJsonSerializer
     {

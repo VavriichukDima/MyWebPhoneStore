@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using MyWebPhoneStoreApi.Models;
+using PhoneApi.Models;
 
-namespace MyWebPhoneStoreApi.Services.Abstractions
+namespace PhoneApi.Services.Abstractions
 {
     public interface IPhoneService
     {

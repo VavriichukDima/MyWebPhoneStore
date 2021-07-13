@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyWebPhoneStoreApi.Data;
+using PhoneApi.Data;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace MyWebPhoneStoreApi.Migrations
+namespace PhoneApi.Migrations
 {
-    [DbContext(typeof(MyWebPhoneStoreApiDbContext))]
+    [DbContext(typeof(PhoneApiDbContext))]
     [Migration("20210710201617_InitialMigration")]
     partial class InitialMigration
     {

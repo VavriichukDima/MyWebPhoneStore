@@ -1,11 +1,11 @@
 using System.Threading.Tasks;
-using MyWebPhoneStoreApi.Configuration;
-using MyWebPhoneStoreApi.Services.Abstractions;
+using PhoneApi.Configuration;
+using PhoneApi.Services.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace MyWebPhoneStoreApi.Controllers
+namespace PhoneApi.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]/[action]")]

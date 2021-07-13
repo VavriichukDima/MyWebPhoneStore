@@ -3,7 +3,7 @@ docker-compose build --no-cache
 docker-compose up   
    
 #Add-Migration
-dotnet ef --startup-project services/MyWebPhoneStoreApi.Service migrations add InitialMigration --project src/MyWebPhoneStoreApi 
+dotnet ef --startup-project services/PhoneApi.Service migrations add InitialMigration --project src/PhoneApi 
 
 #Update-Migration
-dotnet ef --startup-project services/MyWebPhoneStoreApi.Service database update InitialMigration --project src/MyWebPhoneStoreApi
+dotnet ef --startup-project services/PhoneApi.Service database update InitialMigration --project src/PhoneApi

@@ -2,12 +2,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyWebPhoneStoreApi.Data;
+using PhoneApi.Data;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace MyWebPhoneStoreApi.Migrations
+namespace PhoneApi.Migrations
 {
-    [DbContext(typeof(MyWebPhoneStoreApiDbContext))]
+    [DbContext(typeof(PhoneApiDbContext))]
     partial class MyWebPhoneStoreApiDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -18,7 +18,7 @@ namespace MyWebPhoneStoreApi.Migrations
                 .HasAnnotation("ProductVersion", "5.0.7")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-            modelBuilder.Entity("MyWebPhoneStoreApi.Data.MyWebPhoneStoreApiEntity", b =>
+            modelBuilder.Entity("PhoneApi.Data.PhoneApiEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

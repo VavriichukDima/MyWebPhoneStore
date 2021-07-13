@@ -1,4 +1,4 @@
-namespace MyWebPhoneStoreApi.Models
+namespace PhoneApi.Models
 {
     public class GetPhoneResponse
     {

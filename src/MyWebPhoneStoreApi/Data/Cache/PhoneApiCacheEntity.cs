@@ -1,8 +1,8 @@
 using System;
 
-namespace MyWebPhoneStoreApi.Data.Cache
+namespace PhoneApi.Data.Cache
 {
-    public class WebPhoneStoreApiCacheEntity : ICacheEntity
+    public class PhoneApiCacheEntity : ICacheEntity
     {
         public int Id { get; set; }
         public string Name { get; set; } = null!;

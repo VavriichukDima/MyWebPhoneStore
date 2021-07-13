@@ -1,6 +1,6 @@
-using MyWebPhoneStoreApi.Configuration;
+using PhoneApi.Configuration;
 
-namespace MyWebPhoneStoreApi.Configuration
+namespace PhoneApi.Configuration
 {
     public class Config
     {

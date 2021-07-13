@@ -1,6 +1,6 @@
 using System;
 
-namespace MyWebPhoneStoreApi.Data.Cache
+namespace PhoneApi.Data.Cache
 {
     public interface ICacheEntity
     {
