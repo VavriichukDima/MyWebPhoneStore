@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  MyWebPhoneStoreApi.service:
-    image: PhoneApiService
+  phoneApi.Service:
+    image: phoneApiService
     build:
       context: ./
       dockerfile: Dockerfile

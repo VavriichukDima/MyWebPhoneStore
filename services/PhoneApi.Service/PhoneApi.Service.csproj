@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\MyWebPhoneStoreApi\PhoneApi.csproj" />
+    <ProjectReference Include="..\..\src\PhoneApi\PhoneApi.csproj" />
   </ItemGroup>
 
 </Project>

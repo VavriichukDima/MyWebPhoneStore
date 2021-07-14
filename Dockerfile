@@ -10,5 +10,4 @@ RUN dotnet publish -c Release -o /app
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
 COPY --from=build /app ./
-ENTRYPOINT ["dotnet", "PhoneApi.Service.dll"]
-
+ENTRYPOINT ["dotnet", "phoneApi.Service.dll"]

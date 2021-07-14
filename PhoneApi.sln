@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneApi", "src\MyWebPhoneS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneApi.Service", "services\MyWebPhoneStoreApi.Service\PhoneApi.Service.csproj", "{266EEAD7-40AC-459C-B7B9-ADCC55D41AB0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebPhoneStoreApi.UnitTests", "tests\MyWebPhoneStoreAPI.UnitTests\MyWebPhoneStoreApi.UnitTests.csproj", "{F8046B28-FCDF-4C49-9F23-BE690F85A09D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneApi.UnitTests", "tests\MyWebPhoneStoreAPI.UnitTests\PhoneApi.UnitTests.csproj", "{F8046B28-FCDF-4C49-9F23-BE690F85A09D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
